@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-9+$kx*wd1^o=5k7x35qne=d6gtynf@^7ng$6f&zvpmby)akcy9
 DEBUG = True
 
 ALLOWED_HOSTS = ['sumittiruwa.pythonanywhere.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -48,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'todoproject.urls'
